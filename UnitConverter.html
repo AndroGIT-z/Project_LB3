@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Unit Converter | Muhammad Zhafran Zakwan</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/unit-converter.js" defer></script>
+</head>
+<body class="tool-page">
+<header class="site-header">
+        <nav class="cyber-nav w3-bar">
+            <a class="brand w3-bar-item" href="Main.html">
+            <span class="brand-mark">MZZ</span>
+            <span class="brand-text">Zhafran</span> 
+        </a>
+            <div class="nav-links">
+                <a class="w3-bar-item " href="Main.html">Home</a>
+                <a class="w3-bar-item " href="PersonalInfo.html">Personal Info</a>
+                <a class="w3-bar-item active" href="Tools.html">Tools</a>
+                <a class="w3-bar-item " href="CV.html">CV</a>
+            </div>
+        </nav>
+    </header>
+    <main class="cyber-container">
+        <section class="page-header">
+            <span class="eyebrow">04 // JavaScript Module</span>
+            <h1 class="page-title">Unit <span class="neon-cyan">Converter</span></h1>
+            <p class="page-subtitle">Use one input box and choose one of the four required conversions.</p>
+            <div class="actions"><a class="btn btn-secondary w3-button" href="Tools.html">Back to Tools</a></div>
+        </section>
+        <section class="tool-panel w3-card-4">
+            <div class="field"><label for="lengthValue">Value</label><input class="w3-input" type="number" step="any" id="lengthValue"></div>
+            <div class="button-row">
+                <button class="btn btn-primary w3-button" type="button" onclick="cmToMetre()">cm to metre</button>
+                <button class="btn btn-primary w3-button" type="button" onclick="metreToCm()">Metre to cm</button>
+                <button class="btn btn-primary w3-button" type="button" onclick="metreToKm()">Metre to km</button>
+                <button class="btn btn-primary w3-button" type="button" onclick="kmToMetre()">Km to metre</button>
+            </div>
+            <p class="result-box" id="conversionResult"></p>
+        </section>
+    </main>
+</body>
+</html>

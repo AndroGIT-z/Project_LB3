@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BMI Checker | Muhammad Zhafran Zakwan</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bmi.js" defer></script>
+</head>
+<body class="tool-page">
+<header class="site-header">
+        <nav class="cyber-nav w3-bar">
+            <a class="brand w3-bar-item" href="Main.html">
+                <span class="brand-mark">MZZ</span>
+                <span class="brand-text">Zhafran</span>
+            </a>
+            <div class="nav-links">
+                <a class="w3-bar-item " href="Main.html">Home</a>
+                <a class="w3-bar-item " href="PersonalInfo.html">Personal Info</a>
+                <a class="w3-bar-item active" href="Tools.html">Tools</a>
+                <a class="w3-bar-item " href="CV.html">CV</a>
+            </div>
+        </nav>
+    </header>
+    <main class="cyber-container">
+        <section class="page-header">
+            <span class="eyebrow">APP_02 // JavaScript Module</span>
+            <h1 class="page-title">BMI <span class="neon-cyan">Checker</span></h1>
+            <p class="page-subtitle">Enter your weight and height to calculate Body Mass Index.</p>
+            <div class="actions"><a class="btn btn-secondary w3-button" href="Tools.html">Back to Tools</a></div>
+        </section>
+        <section class="tool-panel w3-card-4">
+            <div class="form-grid">
+                <div class="field"><label for="weight">Weight (kg)</label><input class="w3-input" type="number" min="0" step="any" id="weight"></div>
+                <div class="field"><label for="height">Height (cm)</label><input class="w3-input" type="number" min="0" step="any" id="height"></div>
+            </div>
+            <div class="button-row">
+                <button class="btn btn-primary w3-button" type="button" onclick="calculateBMI()">Calculate BMI</button>
+                <button class="btn btn-secondary w3-button" type="button" onclick="clearBMI()">Clear</button>
+            </div>
+            <p class="result-box" id="bmiResult"></p>
+        </section>
+    </main>
+</body>
+</html>

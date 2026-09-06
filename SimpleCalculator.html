@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Calculator | Muhammad Zhafran Zakwan</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/simple-calculator.js" defer></script>
+</head>
+<body class="tool-page">
+<header class="site-header">
+        <nav class="cyber-nav w3-bar">
+            <a class="brand w3-bar-item" href="Main.html">
+            <span class="brand-mark">MZZ</span>
+            <span class="brand-text">Zhafran</span>
+        </a>
+            <div class="nav-links">
+                <a class="w3-bar-item " href="Main.html">Home</a>
+                <a class="w3-bar-item " href="PersonalInfo.html">Personal Info</a>
+                <a class="w3-bar-item active" href="Tools.html">Tools</a>
+                <a class="w3-bar-item " href="CV.html">CV</a>
+            </div>
+        </nav>
+    </header>
+    <main class="cyber-container">
+        <section class="page-header">
+            <span class="eyebrow">APP_01 // JavaScript Module</span>
+            <h1 class="page-title">Simple <span class="neon-cyan">Calculator</span></h1>
+            <p class="page-subtitle">Enter two numbers and select an arithmetic operation.</p>
+            <div class="actions"><a class="btn btn-secondary w3-button" href="Tools.html">Back to Tools</a></div>
+        </section>
+        <section class="tool-panel w3-card-4">
+            <div class="form-grid">
+                <div class="field"><label for="no1">First Number</label><input class="w3-input" type="number" step="any" id="no1"></div>
+                <div class="field"><label for="no2">Second Number</label><input class="w3-input" type="number" step="any" id="no2"></div>
+                <div class="field full"><label for="result">Result</label><input class="w3-input" type="text" id="result" readonly></div>
+            </div>
+            <div class="button-row">
+                <button class="btn btn-primary w3-button" type="button" onclick="doAdd()">Add</button>
+                <button class="btn btn-primary w3-button" type="button" onclick="doSubtract()">Subtract</button>
+                <button class="btn btn-primary w3-button" type="button" onclick="doMultiply()">Multiply</button>
+                <button class="btn btn-primary w3-button" type="button" onclick="doDivide()">Divide</button>
+                <button class="btn btn-secondary w3-button" type="button" onclick="doClear()">Clear</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
